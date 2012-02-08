@@ -43,7 +43,7 @@
             // saveB
             // 
             this.saveB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveB.Location = new System.Drawing.Point(566, 413);
+            this.saveB.Location = new System.Drawing.Point(568, 402);
             this.saveB.Name = "saveB";
             this.saveB.Size = new System.Drawing.Size(75, 25);
             this.saveB.TabIndex = 0;
@@ -54,7 +54,7 @@
             // exitB
             // 
             this.exitB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.exitB.Location = new System.Drawing.Point(649, 413);
+            this.exitB.Location = new System.Drawing.Point(649, 402);
             this.exitB.Name = "exitB";
             this.exitB.Size = new System.Drawing.Size(75, 25);
             this.exitB.TabIndex = 1;
@@ -67,17 +67,18 @@
             this.entriesFLP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.entriesFLP.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.entriesFLP.BackColor = System.Drawing.Color.LightBlue;
+            this.entriesFLP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.entriesFLP.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.entriesFLP.Location = new System.Drawing.Point(12, 12);
             this.entriesFLP.Name = "entriesFLP";
-            this.entriesFLP.Size = new System.Drawing.Size(712, 352);
+            this.entriesFLP.Size = new System.Drawing.Size(712, 384);
             this.entriesFLP.TabIndex = 2;
             // 
             // loadB
             // 
             this.loadB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.loadB.Location = new System.Drawing.Point(12, 413);
+            this.loadB.Location = new System.Drawing.Point(12, 402);
             this.loadB.Name = "loadB";
             this.loadB.Size = new System.Drawing.Size(75, 25);
             this.loadB.TabIndex = 3;
@@ -89,9 +90,9 @@
             // 
             this.varNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.varNameTB.Location = new System.Drawing.Point(185, 416);
+            this.varNameTB.Location = new System.Drawing.Point(189, 405);
             this.varNameTB.Name = "varNameTB";
-            this.varNameTB.Size = new System.Drawing.Size(377, 20);
+            this.varNameTB.Size = new System.Drawing.Size(120, 20);
             this.varNameTB.TabIndex = 4;
             this.varNameTB.Text = "PATH";
             this.varNameTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -99,13 +100,11 @@
             // addB
             // 
             this.addB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addB.ForeColor = System.Drawing.Color.Green;
-            this.addB.Location = new System.Drawing.Point(687, 370);
+            this.addB.Location = new System.Drawing.Point(397, 403);
             this.addB.Name = "addB";
-            this.addB.Size = new System.Drawing.Size(27, 23);
+            this.addB.Size = new System.Drawing.Size(77, 23);
             this.addB.TabIndex = 5;
-            this.addB.Text = "+";
+            this.addB.Text = "^+^";
             this.addB.UseVisualStyleBackColor = true;
             this.addB.Click += new System.EventHandler(this.addB_Click);
             // 
@@ -124,16 +123,17 @@
             this.varTargetCB.Items.AddRange(new object[] {
             "Machine",
             "User"});
-            this.varTargetCB.Location = new System.Drawing.Point(93, 416);
+            this.varTargetCB.Location = new System.Drawing.Point(93, 405);
             this.varTargetCB.Name = "varTargetCB";
-            this.varTargetCB.Size = new System.Drawing.Size(86, 21);
+            this.varTargetCB.Size = new System.Drawing.Size(90, 21);
             this.varTargetCB.TabIndex = 6;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 448);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(736, 439);
             this.Controls.Add(this.varTargetCB);
             this.Controls.Add(this.addB);
             this.Controls.Add(this.varNameTB);
